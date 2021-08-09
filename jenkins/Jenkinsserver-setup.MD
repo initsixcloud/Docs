@@ -13,6 +13,7 @@ source ~/.bash_profile
 ```
 
 ## Install git
+```sh
 yum install git
 
 
