@@ -39,7 +39,7 @@ yum -y install siege
 sudo amazon-linux-extras install epel
 yum install siege -y
 ```
-```sh
+
 siege -q -c 2 -t 2m http://ip:port
 q = quiet mode
 c = concurrent
