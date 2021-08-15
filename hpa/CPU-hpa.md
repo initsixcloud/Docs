@@ -43,7 +43,7 @@ yum install siege -y
 ```
 ### Send fake load to Application URL 
 ```sh
-siege -q -c 2 -t 2m http://ip:port
+siege -q -c 5 -t 2m http://ip:port
 q = quiet mode
 c = concurrent
 2m = time period
