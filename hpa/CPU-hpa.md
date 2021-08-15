@@ -32,14 +32,17 @@ spec:
 
 
 ### If EKS Management OS is RHEL, then execute below commands
+```sh
 yum -y install epel-release
 yum -y install siege
-
+```
 ### If EKS Management OS is Amazon Linux, then execute below commands
+```sh
 sudo amazon-linux-extras install epel
 yum install siege -y
 ```
-
+### Send fake load to Application URL 
+```sh
 siege -q -c 2 -t 2m http://ip:port
 q = quiet mode
 c = concurrent
