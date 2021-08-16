@@ -1,15 +1,5 @@
 # Auto scaling of Pods Based on Memory Utilization
 
-## Modify deployment.yaml with Resource limits
-```sh
-          resources:
-          limits:
-            cpu: '1'
-            memory: '1Gi'
-          requests:
-            cpu: '1'
-            memory: '1Gi'
-```
 
  ## memory-hpa.yaml in Application Helm chart
  ```sh
