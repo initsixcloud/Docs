@@ -28,5 +28,5 @@ spec:
  ```
 ## Execute stress command to increase memory utilization on pod
 ```sh
-stress --vm 1 --vm-bytes 500M  
+stress --vm 1 --vm-bytes 250M  
 ```
