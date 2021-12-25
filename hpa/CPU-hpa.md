@@ -31,7 +31,7 @@ spec:
 ### Siege is a stress tester for HTTP/HTTPS
 
 
-### If EKS Management Host OS is RHEL, then execute below commands
+### If EKS or AKS Management Host OS is RHEL, then execute below commands
 ```sh
 yum -y install epel-release
 yum -y install siege
