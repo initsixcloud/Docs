@@ -8,16 +8,22 @@
 ## Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
 ```sh
-yum install java-1.8*
-#yum -y install java-1.8.0-openjdk
+yum install java-11*
+
 ```
 
 ### Confirm Java Version
 Lets install java and set the java home
 ```sh
 java -version
-find /usr/lib/jvm/java-1.8* | head -n 3
-#JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+find / -name java-11* | head -n 4
+/etc/alternatives/java-11-amazon-corretto
+/etc/alternatives/java-11
+/usr/lib/jvm/java-11-amazon-corretto.x86_64
+/usr/lib/jvm/java-11-amazon-corretto
+
+vi .bash_profile
+JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto.x86_64
 export JAVA_HOME
 PATH=$PATH:$JAVA_HOME
 # To set it permanently update your .bash_profile
@@ -26,9 +32,9 @@ source ~/.bash_profile
 _The output should be something like this,_
 ```
 [root@~]# java -version
-openjdk version "1.8.0_151"
-OpenJDK Runtime Environment (build 1.8.0_151-b12)
-OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+openjdk version "11.0.17" 2022-10-18 LTS
+OpenJDK Runtime Environment Corretto-11.0.17.8.1 (build 11.0.17+8-LTS)
+OpenJDK 64-Bit Server VM Corretto-11.0.17.8.1 (build 11.0.17+8-LTS, mixed mode)
 ```
 
 ## Install Jenkins
@@ -67,8 +73,8 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 - Create another admin user id
 
 ### Test Jenkins Jobs
-1. Create ìnew itemî
-1. Enter an item name ñ `My-First-Project`
+1. Create ‚Äúnew item‚Äù
+1. Enter an item name ‚Äì `My-First-Project`
    - Chose `Freestyle` project
 1. Under Build section
 	Execute shell : echo "Welcome to Jenkins Demo"
