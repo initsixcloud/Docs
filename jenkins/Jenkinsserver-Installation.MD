@@ -3,7 +3,7 @@
 ### Prerequisites 
  1. EC2 Linux 7.x Instance
 
- 2. Java v1.8.x
+ 2. Java v11
 
 ## Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
